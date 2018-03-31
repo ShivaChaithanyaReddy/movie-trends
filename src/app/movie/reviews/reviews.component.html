@@ -1,0 +1,56 @@
+<div id="reviews" class="tab" style="display: block;">
+  <div class="row">
+    <div class="rv-hd">
+      <div class="div">
+        <h3>Reviews for</h3>
+        <h2>{{movie.title}}</h2>
+      </div>
+      <a href="#" class="redbtn">Write Review</a>
+    </div>
+    <div class="topbar-filter">
+      <p>Found <span>56 reviews</span> in total</p>
+      <label>Filter by:</label>
+      <select>
+        <option value="popularity">Popularity Descending</option>
+        <option value="popularity">Popularity Ascending</option>
+        <option value="rating">Rating Descending</option>
+        <option value="rating">Rating Ascending</option>
+        <option value="date">Release date Descending</option>
+        <option value="date">Release date Ascending</option>
+      </select>
+    </div>
+    <div class="mv-user-review-item" *ngFor="let review of reviews">
+      <div class="user-infor">
+        <!--<img src="../assets/images/uploads/userava1.jpg" alt="">-->
+        <div>
+          <h3>{{review.author}}</h3>
+
+          <!--<p class="time">-->
+            <!--17 December 2016 by <a href="#"> hawaiipierson</a>-->
+          <!--</p>-->
+        </div>
+      </div>
+      <p>{{review.content}}</p>
+      <hr>
+      <br>
+    </div>
+
+    <div class="topbar-filter">
+      <label>Reviews per page:</label>
+      <select>
+        <option value="range">5 Reviews</option>
+        <option value="saab">10 Reviews</option>
+      </select>
+      <div class="pagination2">
+        <span>Page 1 of 6:</span>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#"><i class="ion-arrow-right-b"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

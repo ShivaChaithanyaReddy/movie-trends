@@ -1,0 +1,100 @@
+.my-landing{
+  background: url('../../assets/images/uploads/slider-bg.jpg') no-repeat;
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 50px;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.movies-container{
+  padding-top: 30px;
+}
+
+.movies_title .h2{
+  float: left;
+}
+
+
+@media (min-width: 992px) {
+  .text-lg-left {
+    text-align: left !important;
+  }
+  .text-lg-right {
+    text-align: right !important;
+  }
+  .text-lg-center {
+    text-align: center !important;
+  }
+}
+
+
+.my-4{
+  margin-bottom: 1.7rem !important;
+  font-size: 18px;
+}
+.movies-heading{
+  height: 50px;
+}
+
+.movies-heading h1{
+  display: inline-block;
+  width: 80%;
+  float: left;
+}
+.movies-heading a{
+  display: inline-block;
+  width: 19%;
+  text-align: right;
+}
+
+
+.clear-fix{
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.movie-details {
+  position: relative;
+}
+
+.inner-details {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.inner-details p{
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.inner-details h6 a{
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.movie-image{
+
+  box-shadow: inset -5px -50px 100px -15px #000000;
+  -webkit-box-shadow: inset -5px -50px 100px -15px #000000;
+  -moz-box-shadow: inset -5px -50px 100px -15px #000000;
+  -o-box-shadow: inset -5px -50px 100px -15px #000000;
+}
+

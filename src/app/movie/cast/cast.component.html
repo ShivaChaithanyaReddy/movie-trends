@@ -1,0 +1,34 @@
+<div id="cast" class="tab" style="display: block">
+  <div class="row">
+    <h3>Cast & Crew of</h3>
+    <h2>{{movie.title}}</h2>
+    <!-- //== -->
+    <div class="title-hd-sm">
+      <h4>Cast</h4>
+    </div>
+    <div class="mvcast-item">
+      <div class="cast-it"  *ngFor="let user of fullCast">
+        <div class="cast-left">
+          <img  *ngIf="user.profile_path !== null" src="https://image.tmdb.org/t/p/w45/{{user.profile_path}}" alt="">
+          <img  *ngIf="user.profile_path === null" src="https://image.tmdb.org/t/p/w45/{{movie.poster_path}}" alt="">
+          <a href="#">{{user.name}}</a>
+        </div>
+        <p>...  {{user.character}}</p>
+      </div>
+    </div>
+    <!-- //== -->
+    <div class="title-hd-sm">
+      <h4>Crew</h4>
+    </div>
+    <div class="mvcast-item">
+      <div class="cast-it" *ngFor="let user of fullCrew">
+        <div class="cast-left">
+          <img  *ngIf="user.profile_path !== null" src="https://image.tmdb.org/t/p/w45/{{user.profile_path}}" alt="">
+          <img  *ngIf="user.profile_path === null" src="https://image.tmdb.org/t/p/w45/{{movie.poster_path}}" alt="">
+          <a href="#">{{user.name}}</a>
+        </div>
+        <p>...  {{user.job}}</p>
+      </div>
+    </div>
+  </div>
+</div>

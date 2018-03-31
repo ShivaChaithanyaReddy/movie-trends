@@ -1,0 +1,144 @@
+
+<div class="my-landing"></div>
+
+<!-- Page Content -->
+
+<div class="container movies-container">
+  <!--top rated movies starts-->
+
+  <div class="movies-heading">
+    <h1 class="my-4">Popular Movies</h1>
+    <a href="#">View all <i class="ion-ios-arrow-right"></i></a>
+  </div>
+  <div class="row text-center text-lg-left">
+
+    <div  *ngFor=" let movie of popularMovies" class="col-lg-2 col-md-3 col-xs-6 movie-details">
+      <a routerLink = "/movie/{{movie.id}}" class="d-block mb-4 h-100 movie-image">
+        <img class="img-fluid img-thumbnail" src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="">
+      </a>
+      <div class="inner-details">
+        <div class="hvr-inner">
+          <a  href="#"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+        </div>
+        <div class="movie-title">
+          <h6><a href="#">Interstellar</a></h6>
+          <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="clear-fix"></div>
+  <!--top rated movies  ends-->
+  <hr>
+  <div class="clear-fix"></div>
+
+
+  <!--Popular Movies starts-->
+  <div class="all-items">
+    <div class="movies-heading">
+      <h1 class="my-4">Top Rated Movies</h1>
+      <a href="#">View all <i class="ion-ios-arrow-right"></i></a>
+    </div>
+    <div class="row text-center text-lg-left">
+
+      <div class="col-lg-2 col-md-3 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="../assets/images/uploads/mv-item1.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-3 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="../assets/images/uploads/mv-item2.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-3 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="../assets/images/uploads/mv-item4.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-3 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="../assets/images/uploads/mv-item5.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-3 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="../assets/images/uploads/mv-item6.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-3 col-xs-6">
+        <a href="#" class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="../assets/images/uploads/mv-item7.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--Popular Movies ends-->
+  <div class="clear-fix"></div>
+
+  <hr>
+  <div class="clear-fix"></div>
+
+  <!--tv series starts-->
+
+  <div class="movies-heading">
+    <h1 class="my-4">Top Rated Movies</h1>
+    <a href="#">View all <i class="ion-ios-arrow-right"></i></a>
+  </div>
+  <div class="row text-center text-lg-left">
+
+    <div class="col-lg-2 col-md-3 col-xs-6">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="../assets/images/uploads/mv-item1.jpg" alt="">
+      </a>
+    </div>
+    <div class="col-lg-2 col-md-3 col-xs-6">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="../assets/images/uploads/mv-item2.jpg" alt="">
+      </a>
+    </div>
+    <div class="col-lg-2 col-md-3 col-xs-6">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="../assets/images/uploads/mv-item4.jpg" alt="">
+      </a>
+    </div>
+    <div class="col-lg-2 col-md-3 col-xs-6">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="../assets/images/uploads/mv-item5.jpg" alt="">
+      </a>
+    </div>
+    <div class="col-lg-2 col-md-3 col-xs-6">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="../assets/images/uploads/mv-item6.jpg" alt="">
+      </a>
+    </div>
+    <div class="col-lg-2 col-md-3 col-xs-6">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="../assets/images/uploads/mv-item7.jpg" alt="">
+      </a>
+    </div>
+  </div>
+  <!--tv series ends-->
+</div>
+<!-- /.container -->
+
+<!--<div class="container movies-container">-->
+<!--<div class="row">-->
+<!--<div class="col-md-12">-->
+<!--<div class="movies_title">-->
+<!--<h2>IN THEATERS</h2>-->
+<!--<a href="#" class="showAll">View all <i class="ion-ios-arrow-right"></i></a>-->
+<!--</div>-->
+<!--<div class="tabs">-->
+<!--<ul class="tab-links">-->
+<!--<li class="active"><a href="#tab1">#Popular</a></li>-->
+<!--<li><a href="#tab2"> #Coming soon</a></li>-->
+<!--<li><a href="#tab3">  #Top rated  </a></li>-->
+<!--<li><a href="#tab4"> #Most reviewed</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--</div>-->
